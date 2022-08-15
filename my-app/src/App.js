@@ -27,12 +27,12 @@ function playAudio() {
 	audio.play();
 }
 
+// Taking user input
+
 return (
 	<div className="App">
 	<h1>Free Dictionary</h1>
 	<div className="searchBox">
-
-		// Taking user input
 		<input
 		type="text"
 		placeholder="Search..."
