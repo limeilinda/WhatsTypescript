@@ -21,6 +21,34 @@ function getMeaning() {
 }
 
 // Function to play and listen to the phonetics of each searched word
+function playAudio() {
+  let audio = new Audio(data.phonetics[0].audio);
+  audio.play();
+}
+// Taking user input
+return (
+  <div className="App">
+    <h1>Dictionary</h1>
+    <div className="searchBox">
+
+      <input
+      type = "text"
+      placeholder = "Search..."
+      onChange={(e) => {
+        setSearchWord(e.target.value);
+      }}
+      />
+      <button
+        onClick={() => {
+          getMeaning();
+        }}
+        >
+          <FaSearch size="20px" />
+        </button>
+    </div>
+    {}
+  </div>
+)
 
 
 export default App;
